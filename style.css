@@ -161,7 +161,7 @@ header nav a:hover {
     background: 
         linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(13, 36, 56, 1) 90%),
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('https://images.unsplash.com/photo-15760G91160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+        url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto-format&fit=crop') no-repeat center center/cover;
 }
 
 .hero-content {
@@ -169,11 +169,11 @@ header nav a:hover {
     z-index: 2;
     color: #fff;
     padding-top: 5vh;
-    padding-bottom: 200px;
+    padding-bottom: 120px; /* Valore intermedio per lo spazio */
     text-align: left;
 }
 .hero-content h2 { 
-    font-size: 3.2rem; /* Leggermente ridotto per evitare di andare a capo */
+    font-size: 3.2rem;
     font-weight: 900; 
     line-height: 1.2; 
     color: #fff; 
@@ -208,13 +208,12 @@ header nav a:hover {
 }
 .service-box {
     color: #fff;
-    padding: 40px 30px;
+    padding: 30px;
     text-align: center;
     transition: transform 0.3s, filter 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 }
 .service-box:hover {
     transform: translateY(-15px);
@@ -235,21 +234,16 @@ header nav a:hover {
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    width: 100%;
-    min-height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .service-box p {
     font-size: 1rem;
     line-height: 1.6;
     opacity: 0.9;
     max-width: 300px;
-    flex-grow: 1; /* Fa in modo che il paragrafo occupi lo spazio disponibile */
+    flex-grow: 1; /* Forza i paragrafi ad occupare lo spazio, spingendo in basso i link */
 }
 .service-box .service-link {
-    margin-top: 20px;
+    margin-top: 20px; /* Spazio fisso sopra il link */
     color: #fff;
     font-weight: 700;
     border: 2px solid #fff;
@@ -474,4 +468,3 @@ footer {
         display: none;
     }
 }
-
