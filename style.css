@@ -236,7 +236,7 @@ header nav a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     width: 100%;
-    min-height: 80px;
+    min-height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -474,3 +474,4 @@ footer {
         display: none;
     }
 }
+
