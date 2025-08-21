@@ -142,7 +142,10 @@ header nav a:hover {
 
 /* ---- BLOCCO COMBINATO HERO + SERVIZI (HOMEPAGE) ---- */
 #hero-combined {
-    padding-top: 100px;
+    display: flex; /* Aggiunto per allineamento verticale */
+    flex-direction: column; /* Aggiunto per allineamento verticale */
+    justify-content: space-between; /* Aggiunto per allineamento verticale */
+    min-height: 100vh; /* Occupa l'intera altezza dello schermo */
     position: relative;
     background-color: #0d2438;
 }
@@ -158,14 +161,14 @@ header nav a:hover {
     background: 
         linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(13, 36, 56, 1) 90%),
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto-format&fit=crop') no-repeat center center/cover;
+        url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
     color: #fff;
-    padding-bottom: 100px;
+    padding-top: 5vh; /* Spazio dall'alto, flessibile */
     text-align: left;
 }
 .hero-content h2 { font-size: 3.5rem; font-weight: 900; line-height: 1.2; color: #fff; margin-bottom: 20px; margin-top: 0; }
@@ -197,13 +200,13 @@ header nav a:hover {
 }
 .service-box {
     color: #fff;
-    padding: 50px 30px;
+    padding: 40px 30px;
     text-align: center;
     transition: transform 0.3s, filter 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Allinea il contenuto in alto */
 }
 .service-box:hover {
     transform: translateY(-15px);
@@ -223,6 +226,11 @@ header nav a:hover {
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    width: 100%; /* Forza i titoli ad avere la stessa larghezza */
+    min-height: 80px; /* Imposta un'altezza minima per allineare i paragrafi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .service-box p {
     font-size: 1rem;
@@ -231,7 +239,7 @@ header nav a:hover {
     max-width: 300px;
 }
 .service-box .service-link {
-    margin-top: 20px;
+    margin-top: auto; /* Spinge il pulsante in basso */
     color: #fff;
     font-weight: 700;
     border: 2px solid #fff;
