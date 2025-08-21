@@ -8,8 +8,8 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 90%; /* Occupa il 90% della larghezza disponibile */
+    max-width: 1100px; /* Ma non più di 1100px */
     margin: auto;
     padding: 0;
 }
@@ -142,10 +142,10 @@ header nav a:hover {
 
 /* ---- BLOCCO COMBINATO HERO + SERVIZI (HOMEPAGE) ---- */
 #hero-combined {
-    display: flex; /* Aggiunto per allineamento verticale */
-    flex-direction: column; /* Aggiunto per allineamento verticale */
-    justify-content: space-between; /* Aggiunto per allineamento verticale */
-    min-height: 100vh; /* Occupa l'intera altezza dello schermo */
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     position: relative;
     background-color: #0d2438;
 }
@@ -168,7 +168,8 @@ header nav a:hover {
     position: relative;
     z-index: 2;
     color: #fff;
-    padding-top: 5vh; /* Spazio dall'alto, flessibile */
+    padding-top: 5vh;
+    padding-bottom: 200px; /* AUMENTATO LO SPAZIO QUI */
     text-align: left;
 }
 .hero-content h2 { font-size: 3.5rem; font-weight: 900; line-height: 1.2; color: #fff; margin-bottom: 20px; margin-top: 0; }
@@ -206,7 +207,7 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Allinea il contenuto in alto */
+    justify-content: flex-start;
 }
 .service-box:hover {
     transform: translateY(-15px);
@@ -226,8 +227,8 @@ header nav a:hover {
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    width: 100%; /* Forza i titoli ad avere la stessa larghezza */
-    min-height: 80px; /* Imposta un'altezza minima per allineare i paragrafi */
+    width: 100%;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,7 +240,7 @@ header nav a:hover {
     max-width: 300px;
 }
 .service-box .service-link {
-    margin-top: auto; /* Spinge il pulsante in basso */
+    margin-top: auto;
     color: #fff;
     font-weight: 700;
     border: 2px solid #fff;
