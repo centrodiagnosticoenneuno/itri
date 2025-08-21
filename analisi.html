@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipi di Analisi - Centro Enne Uno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>
+                <a href="index.html" class="logo-link">
+                    <span class="logo-icon">E1</span>
+                    <span class="logo-text-container">
+                        <span class="logo-line-1">Centro Diagnostico</span>
+                        <span class="logo-line-2">"Enne Uno" S.r.l.</span>
+                    </span>
+                </a>
+            </h1>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="analisi.html">Tipi di Analisi</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class.container">
+            <div class="page-header">
+                <h1>Le Nostre Aree di Specializzazione</h1>
+            </div>
+            
+            <div class="analysis-grid container">
+                <!-- Riga 1 -->
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1578496479532-35f61ac24e89?q=80&w=870" alt="Ematologia">
+                    <div class="analysis-title">Ematologia di Laboratorio</div>
+                </div>
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1628859017433-a8b41e3d3013?q=80&w=870" alt="Immunometria">
+                    <div class="analysis-title">Immunometria</div>
+                </div>
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1579154341193-4933a388b39b?q=80&w=870" alt="Biochimica">
+                    <div class="analysis-title">Biochimica Clinica</div>
+                </div>
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1606913721392-272d1b262e84?q=80&w=870" alt="Esami del sangue">
+                    <div class="analysis-title">Esami del Sangue</div>
+                </div>
+
+                <!-- Riga 2 -->
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1628859017593-575a0c355f6e?q=80&w=870" alt="Coagulazione">
+                    <div class="analysis-title">Coagulazione</div>
+                </div>
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1607619056574-7d8d3ee536b2?q=80&w=900" alt="Intolleranze">
+                    <div class="analysis-title">Intolleranze e Breath Test</div>
+                </div>
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1581092440792-70b4a4c14c33?q=80&w=870" alt="Microbiologia">
+                    <div class="analysis-title">Microbiologia e Parassitologia</div>
+                </div>
+                <div class="analysis-card">
+                    <img src="https://images.unsplash.com/photo-1557825835-b4527f242af7?q=80&w=870" alt="Biologia Molecolare">
+                    <div class="analysis-title">Biologia Molecolare e Genetica</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column"><h3>Il Centro Diagnostico</h3><p>Enne Uno s.r.l. è un laboratorio di analisi cliniche che opera nel territorio di Itri, offrendo un servizio completo e affidabile.</p></div>
+                <div class="footer-column"><h3>Link Utili</h3><ul><li><a href="analisi.html">Tipi di Analisi</a></li><li><a href="chi-siamo.html">Chi Siamo</a></li><li><a href="contatti.html">Contatti e Orari</a></li></ul></div>
+                <div class="footer-column"><h3>Orari di Apertura</h3><p><strong>Lunedì - Venerdì:</strong><br>07:30 - 13:00 / 14:00 - 16:00</p><p><strong>Sabato:</strong><br>07:30 - 12:00</p></div>
+                <div class="footer-column"><h3>Contatti</h3><p><strong>Enne Uno s.r.l.</strong><br>Via Civita Farnesa, 27, 04020 Itri (LT)<br><strong>Tel:</strong> 0771 729310<br><strong>P.IVA:</strong> 02288620590</p></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Centro Diagnostico Enne Uno s.r.l. Tutti i diritti riservati.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
